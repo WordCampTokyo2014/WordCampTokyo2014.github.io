@@ -16,7 +16,7 @@ $.ajax({
 
     for(var i=0; i < json.length; i++){
       var col = create_repo_div(json[i]);
-      if(i > json.length/2){
+      if(i > json.length /2 -1){
       div[0].appendChild(col);
       }else{
       div[1].appendChild(col);
