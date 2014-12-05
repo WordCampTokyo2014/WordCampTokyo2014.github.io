@@ -1,5 +1,3 @@
-
-
 $.ajax({
   type: 'GET',
   url: 'https://api.github.com/users/wordcamptokyo2014/repos',
@@ -15,11 +13,13 @@ $.ajax({
     }
 
     for(var i=0; i < json.length; i++){
-      var col = create_repo_div(json[i]);
-      if(i > json.length /2 -1){
-      div[0].appendChild(col);
-      }else{
-      div[1].appendChild(col);
+      if(json[i].name!="WordCampTokyo2014.github.io"){
+        var col = create_repo_div(json[i]);
+        if(i > json.length /2 -1){
+          div[0].appendChild(col);
+        }else{
+          div[1].appendChild(col);
+        }
       }
     }
   }
