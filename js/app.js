@@ -12,10 +12,12 @@ $.ajax({
       container.appendChild(div[i]);
     }
 
-    for(var i=0; i < json.length; i++){
-      if(json[i].name!="WordCampTokyo2014.github.io"){
+    for(var i=0,j=0; i < json.length; i++){
+      if(json[i].name=="WordCampTokyo2014.github.io"){
+        j++;
+      }else{
         var col = create_repo_div(json[i]);
-        if(i > json.length /2 -1){
+        if(i >= json.length /2 -1 +j){
           div[0].appendChild(col);
         }else{
           div[1].appendChild(col);
