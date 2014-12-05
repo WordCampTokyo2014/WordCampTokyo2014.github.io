@@ -30,6 +30,15 @@ function create_repo_div(json) {
       var div = document.createElement("div"),
       title = document.createElement("h2");
 
+      // --- It's for debug. Remove it once you create thumbnail function --- //
+      if(json.name=="logo"){
+	var img = new Image();
+        img.src = 'https://raw.githubusercontent.com/' + json.full_name + '/master/PNG/logo_a.png';
+	//img.style.setAttribute('max-width','100%');
+	img.style.cssText='max-width: 100%';
+        div.appendChild(img);
+      }
+
       // --- Add thumbnail image ---- //
       var img = new Image();
       img.src = 'https://raw.githubusercontent.com/' + json.full_name + '/master/sample/thumb.png';
