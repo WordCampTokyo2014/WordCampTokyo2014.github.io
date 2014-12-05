@@ -1,0 +1,19 @@
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #5198CE;
+}
+.marketing {
+	margin: 40px -20px;
+}
+.marketing > div > div {
+	background-color: #eee;
+	border-radius: 6px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.marketing > div > div > h2 {
+	margin: 10px 0;
+}
