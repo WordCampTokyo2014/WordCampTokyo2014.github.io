@@ -2,10 +2,10 @@ WordCamp Tokyo 2014 Repository List Page
 ===========================
 
 これはGitHub Pages用のリポジトリです。  
-[wordcamptokyo2014.github.io](wordcamptokyo2014.github.io)にアクセスすると、HTML ページが閲覧できます。
+[https://wordcamptokyo2014.github.io](https://wordcamptokyo2014.github.io)にアクセスすると、HTML ページが閲覧できます。
 
 ###概要
-この GitHub Organization は、 [WordCamp Kansai 2014](https://github.com/WordCampKansai2014) に触発された、 [WordCamp Tokyo 2014](http://2014.tokyo.wordcamp.org) 印刷班班長 [嵩本 康志さん](https://github.com/yasushitakemoto) が、WordCamp Tokyo 2014 のために制作されたさまざまなデータを、共有するために作りました。その後 [森山 真祐子さん](github.com/mayuko-jpn) が、ぜひたくさんの人に見てもらいたいと思ったので、GitHub Page を作りました。
+この GitHub Organization は、 [WordCamp Kansai 2014](https://github.com/WordCampKansai2014) に触発された、 [WordCamp Tokyo 2014](http://2014.tokyo.wordcamp.org) 印刷班班長 [嵩本 康志さん](https://github.com/yasushitakemoto) が、WordCamp Tokyo 2014 のために制作されたさまざまなデータを、共有するために作りました。その後 [森山 真祐子さん](github.com/mayuko-jpn) が、ぜひたくさんの人に見てもらいたいと思ったので、リポジトリの内容を一覧表示させる GitHub Page を作りました。
 
 改善すべき点がございましたら、ぜひプルリクエストをお送りください！
 
