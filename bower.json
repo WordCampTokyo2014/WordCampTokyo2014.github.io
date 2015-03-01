@@ -14,11 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.3"
-  },
-  "exportsOverride": {
-    "jquery": {
-      "": "**/jquery.js"
-    }
+    "bootstrap-sass-official": "~3.3.3",
+    "mustache": "~1.1.0"
   }
 }

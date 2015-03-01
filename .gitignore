@@ -40,7 +40,7 @@ nbproject
 .ssh
 .grunt
 node_modules
-bower_components
+# bower_components
 dist
 lib-cov
 lcov.info
