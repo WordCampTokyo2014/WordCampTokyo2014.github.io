@@ -2,6 +2,19 @@
 /* =========================================================
    extends
 ========================================================= */
+// Base width
+%baseWidth {
+  $padding: 20px;
+  max-width: $maxWidth + ($padding * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $padding / 2;
+  padding-left: $padding / 2;
+  @media (min-width: $screen-md-min) {
+    padding-right: $padding;
+    padding-left: $padding;
+  }
+}
 // Table
 %table {
   display: table;

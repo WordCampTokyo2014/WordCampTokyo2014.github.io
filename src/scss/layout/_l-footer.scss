@@ -1,1 +1,27 @@
 @charset 'utf-8';
+
+.l-footer {
+  background-color: $colorBlue;
+  color: #fff;
+  position: relative;
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 40px 0;
+  }
+}
+
+.footerGitHub {
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 48px;
+  z-index: 20;
+  .this__icon {
+    @include sprite-ir($icon-github, 0.5);
+  }
+}

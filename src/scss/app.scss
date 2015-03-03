@@ -3,9 +3,10 @@
 // core files
 // ========================================
 @import 'core/config';
-@import 'core/mixins';
-@import 'core/default';
+// @import 'core/default';
+@import 'core/bootstrap-sprockets';
 @import 'core/bootstrap';
+@import 'core/mixins';
 
 // ========================================
 // modules

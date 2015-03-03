@@ -11,22 +11,44 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$-dummy-name: '_dummy';
-$-dummy-x: 0px;
-$-dummy-y: 0px;
-$-dummy-offset-x: 0px;
-$-dummy-offset-y: 0px;
-$-dummy-width: 10px;
-$-dummy-height: 10px;
-$-dummy-total-width: 10px;
-$-dummy-total-height: 10px;
-$-dummy-image: '../images/sprite.png';
-$-dummy: 0px 0px 0px 0px 10px 10px 10px 10px '../images/sprite.png' '_dummy';
-$spritesheet-width: 10px;
-$spritesheet-height: 10px;
+$icon-github-name: 'icon_github';
+$icon-github-x: 500px;
+$icon-github-y: 274px;
+$icon-github-offset-x: -500px;
+$icon-github-offset-y: -274px;
+$icon-github-width: 96px;
+$icon-github-height: 96px;
+$icon-github-total-width: 1144px;
+$icon-github-total-height: 440px;
+$icon-github-image: '../images/sprite.png';
+$icon-github: (500px, 274px, -500px, -274px, 96px, 96px, 1144px, 440px, '../images/sprite.png', 'icon_github', );
+$img-sticker-karuta-name: 'img_stickerKaruta';
+$img-sticker-karuta-x: 500px;
+$img-sticker-karuta-y: 0px;
+$img-sticker-karuta-offset-x: -500px;
+$img-sticker-karuta-offset-y: 0px;
+$img-sticker-karuta-width: 644px;
+$img-sticker-karuta-height: 274px;
+$img-sticker-karuta-total-width: 1144px;
+$img-sticker-karuta-total-height: 440px;
+$img-sticker-karuta-image: '../images/sprite.png';
+$img-sticker-karuta: (500px, 0px, -500px, 0px, 644px, 274px, 1144px, 440px, '../images/sprite.png', 'img_stickerKaruta', );
+$img-wapu-m-name: 'img_wapuM';
+$img-wapu-m-x: 0px;
+$img-wapu-m-y: 0px;
+$img-wapu-m-offset-x: 0px;
+$img-wapu-m-offset-y: 0px;
+$img-wapu-m-width: 500px;
+$img-wapu-m-height: 440px;
+$img-wapu-m-total-width: 1144px;
+$img-wapu-m-total-height: 440px;
+$img-wapu-m-image: '../images/sprite.png';
+$img-wapu-m: (0px, 0px, 0px, 0px, 500px, 440px, 1144px, 440px, '../images/sprite.png', 'img_wapuM', );
+$spritesheet-width: 1144px;
+$spritesheet-height: 440px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: $-dummy;
-$spritesheet: 10px 10px '../images/sprite.png' $spritesheet-sprites;
+$spritesheet-sprites: ($icon-github, $img-sticker-karuta, $img-wapu-m, );
+$spritesheet: (1144px, 440px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
