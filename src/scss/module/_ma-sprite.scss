@@ -1,0 +1,103 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-github-name: 'icon_github';
+$icon-github-x: 500px;
+$icon-github-y: 274px;
+$icon-github-offset-x: -500px;
+$icon-github-offset-y: -274px;
+$icon-github-width: 96px;
+$icon-github-height: 96px;
+$icon-github-total-width: 1144px;
+$icon-github-total-height: 440px;
+$icon-github-image: '../images/sprite.png';
+$icon-github: (500px, 274px, -500px, -274px, 96px, 96px, 1144px, 440px, '../images/sprite.png', 'icon_github', );
+$img-sticker-karuta-name: 'img_stickerKaruta';
+$img-sticker-karuta-x: 500px;
+$img-sticker-karuta-y: 0px;
+$img-sticker-karuta-offset-x: -500px;
+$img-sticker-karuta-offset-y: 0px;
+$img-sticker-karuta-width: 644px;
+$img-sticker-karuta-height: 274px;
+$img-sticker-karuta-total-width: 1144px;
+$img-sticker-karuta-total-height: 440px;
+$img-sticker-karuta-image: '../images/sprite.png';
+$img-sticker-karuta: (500px, 0px, -500px, 0px, 644px, 274px, 1144px, 440px, '../images/sprite.png', 'img_stickerKaruta', );
+$img-wapu-m-name: 'img_wapuM';
+$img-wapu-m-x: 0px;
+$img-wapu-m-y: 0px;
+$img-wapu-m-offset-x: 0px;
+$img-wapu-m-offset-y: 0px;
+$img-wapu-m-width: 500px;
+$img-wapu-m-height: 440px;
+$img-wapu-m-total-width: 1144px;
+$img-wapu-m-total-height: 440px;
+$img-wapu-m-image: '../images/sprite.png';
+$img-wapu-m: (0px, 0px, 0px, 0px, 500px, 440px, 1144px, 440px, '../images/sprite.png', 'img_wapuM', );
+$spritesheet-width: 1144px;
+$spritesheet-height: 440px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($icon-github, $img-sticker-karuta, $img-wapu-m, );
+$spritesheet: (1144px, 440px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

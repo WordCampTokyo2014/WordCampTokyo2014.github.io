@@ -1,0 +1,28 @@
+@charset "utf-8";
+$imgPath          : "shared/images/";
+
+// font-family
+$fontFamily        : "Open sans", "Helvetica", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Arial", "Verdana", "sans-serif";
+$fontCode          : monospace, "ＭＳ Ｐ ゴシック","MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+
+// Colum Base Width
+$maxWidth          : 1060px;
+
+// Basic Colors
+$colorBlue         : #3595BE;
+$colorPink         : #EF86B4;
+// Text Colors
+$colorText         : #555555;
+$colorSubText      : #666;
+$colorTitle        : #555555;
+$colorLink         : darken($colorBlue, 12%);
+$colorLinkHover    : lighten($colorBlue, 9%);
+$colorSelection    : #accef7;
+
+// bootstrap
+$body-bg                     : #f4f4f4;
+$font-family-base            : $fontFamily;
+$grid-gutter-width           : 30px;
+$container-tablet            : (720px + $grid-gutter-width);
+$container-desktop           : (940px + $grid-gutter-width);
+$container-large-desktop     : (1060px + $grid-gutter-width);

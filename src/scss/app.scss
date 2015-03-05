@@ -1,0 +1,19 @@
+@charset "utf-8";
+// ========================================
+// core files
+// ========================================
+@import 'core/config';
+// @import 'core/default';
+@import 'core/bootstrap-sprockets';
+@import 'core/bootstrap';
+@import 'core/mixins';
+
+// ========================================
+// modules
+// ========================================
+@import 'module/*.*';
+
+// ========================================
+// layouts
+// ========================================
+@import 'layout/*.*';
